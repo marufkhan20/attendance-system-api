@@ -22,6 +22,7 @@ const userSchema = new Schema({
   password: {
     type: String,
     minlength: [6, "Password is too short"],
+    required: true,
   },
   roles: {
     type: [String],
